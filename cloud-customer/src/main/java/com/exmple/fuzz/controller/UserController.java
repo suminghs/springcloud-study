@@ -22,9 +22,11 @@ public class UserController {
     @Autowired
     private RestTemplate restTemplate;
 
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER";
+
     @GetMapping("/user/list")
     public List<User> userList() {
-        List<User> users = restTemplate.getForObject("http://localhost:7001/user/list", List.class);
+        List<User> users = restTemplate.getForObject(REST_URL_PREFIX + "/user/list", List.class);
         System.out.println(users);
         return users;
     }
