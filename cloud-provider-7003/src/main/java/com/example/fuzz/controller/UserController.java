@@ -24,7 +24,9 @@ public class UserController {
 
     @GetMapping("/user/list")
     public List<User> selectList() {
-        return userService.selectList();
+        List<User> users = userService.selectList();
+        users.add(new User(-1, "来自集群3"));
+        return users;
     }
 
 }

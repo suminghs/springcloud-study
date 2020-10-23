@@ -1,6 +1,6 @@
-package com.exmple.fuzz.controller;
+package com.example.fuzz.controller;
 
-import com.exmple.fuzz.pojo.User;
+import com.example.fuzz.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

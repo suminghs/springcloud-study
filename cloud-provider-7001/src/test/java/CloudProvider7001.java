@@ -1,5 +1,5 @@
 import com.example.fuzz.service.UserService;
-import com.exmple.fuzz.pojo.User;
+import com.example.fuzz.pojo.User;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

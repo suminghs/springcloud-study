@@ -1,6 +1,9 @@
-package com.exmple.fuzz.pojo;
+package com.example.fuzz.pojo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,6 +16,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Accessors(chain = true)
 public class User {
     private Integer id;
     private String name;

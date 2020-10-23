@@ -1,5 +1,7 @@
-package com.exmple.fuzz.config;
+package com.example.fuzz.config;
 
+import com.netflix.loadbalancer.AvailabilityFilteringRule;
+import com.netflix.loadbalancer.IRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,4 +24,8 @@ public class BeanConfig {
         return new RestTemplate();
     }
 
+    @Bean
+    public IRule myRule() {
+        return new AvailabilityFilteringRule();
+    }
 }
