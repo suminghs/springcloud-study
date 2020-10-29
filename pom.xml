@@ -17,6 +17,10 @@
         <module>cloud-provider-7003</module>
         <module>cloud-customer-feign</module>
         <module>cloud-zuul-9527</module>
+        <module>cloud-config-server</module>
+        <module>cloud-config-client</module>
+        <module>cloud-config-server-eureka</module>
+        <module>cloud-config-client-eureka</module>
     </modules>
     <name>springcloud-study</name>
     <description>Demo project for Spring Boot</description>
