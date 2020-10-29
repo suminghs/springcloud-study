@@ -8,5 +8,5 @@ spring:
         git:
           uri: https://gitee.com/fz972/springcoud-config.git
           search-paths: springcoud-config
-          username: 2279419934@qq.com
-          password: mx54321??
+#          username:
+#          password:
